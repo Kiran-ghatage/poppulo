@@ -1,8 +1,10 @@
 import styles from '../styles/Pagination.module.css';
 
-const Pagination = ({ totalDogs, dogsPerPage, currentPage, setCurrentPage }) => {
+const Pagination = ({ totalBreeds, breedsPerPage, currentPage, setCurrentPage }) => {
   const pageNumbers = [];
-  for (let i = 1; i <= Math.ceil(totalDogs / dogsPerPage); i++) {
+
+  console.table(totalBreeds, breedsPerPage, currentPage, setCurrentPage)
+  for (let i = 1; i <= Math.ceil(totalBreeds / breedsPerPage); i++) {
     pageNumbers.push(i);
   }
 

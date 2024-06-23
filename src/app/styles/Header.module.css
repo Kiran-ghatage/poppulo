@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.topBanner {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.topBanner a {
+  color: #d49eff;
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16px;
+  background: white;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: black;
+}
+
+.cta button {
+  background: transparent;
+  border: 2px solid #6200ee;
+  padding: 8px 16px;
+  color: #6200ee;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: white;
+  }
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .cta {
+    display: none;
+  }
+}

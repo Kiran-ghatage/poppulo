@@ -6,12 +6,14 @@
   }
   .pagination button {
     margin: 0 5px;
-    padding: 10px 20px;
+    padding: 10px 50px;
     border: none;
-    background-color: #0070f3;
-    color: white;
+    background-color: #F046FF;
+    color: #000000;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
   }
   .pagination button:disabled {
     background-color: #ddd;
