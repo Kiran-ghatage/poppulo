@@ -11,7 +11,7 @@
 
 ```bash
 git clone <repository-url>
-cd poppulo-assignment
+cd poppulo
 
 ## Run command to Install dependencies: 
 npm i

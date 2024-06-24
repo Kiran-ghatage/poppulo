@@ -7,6 +7,7 @@ import Pagination from '../app/components/Pagination';
 import Search from '../app/components/Search';
 import styles from '../app/styles/Home.module.scss';
 import useDebounce from '../app/hooks/useDebounce';
+import { SUCCESS_STATUS_CODE } from "../app/constants"
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -36,6 +37,7 @@ export default function Home() {
 
   const fetchBreeds = async () => {
     const response = await axios.get('/api/breeds');
+    if(response.status === SUCCESS_STATUS_CODE)
     setFilteredBreeds(response.data);
   };
 
@@ -54,6 +56,8 @@ export default function Home() {
         <div className={styles.searchContainer}>
           <Search setSearch={setSearchTerm} />
         </div>
+
+        <h2 className={styles.title}>Breeds</h2>
         <div className={styles.cardContainer}>
           <div className={styles.grid}>
             {Object.keys(paginatedBreeds).map((breed) => (
