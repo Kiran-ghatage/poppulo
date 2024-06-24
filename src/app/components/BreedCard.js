@@ -1,4 +1,4 @@
-import styles from '../styles/BreedCard.module.css';
+import styles from '../styles/BreedCard.module.scss';
 import Image from "next/image";
 import { capitalizeFirstLetter } from '../utils/utils';
 const BreedCard = ({ breed, subBreeds }) => {
@@ -15,13 +15,13 @@ const BreedCard = ({ breed, subBreeds }) => {
       <h3>{capitalizeFirstLetter(breed || "")}</h3>
      
       {subBreeds.length > 0 && (
-        <>
+        <div className={styles.description}>
           {subBreeds.map((subBreed, i) => <span key={subBreed}>
             {i > 0 && ", "}
             {capitalizeFirstLetter(subBreed)}
           </span>)}
 
-        </>
+        </div>
       )}
     </div>
   );

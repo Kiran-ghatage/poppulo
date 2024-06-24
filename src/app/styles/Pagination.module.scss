@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -8,8 +10,8 @@
     margin: 0 5px;
     padding: 10px 50px;
     border: none;
-    background-color: #F046FF;
-    color: #000000;
+    background-color: $primary-color;
+    color: $secondary-color;
     cursor: pointer;
     border-radius: 20px;
     font-size: 16px;

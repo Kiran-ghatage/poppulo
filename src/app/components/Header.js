@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Image from "next/image";
-import styles from '../styles/Header.module.css';
+import styles from '../styles/Header.module.scss';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);

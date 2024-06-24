@@ -1,4 +1,4 @@
-import styles from '../styles/Pagination.module.css';
+import styles from '../styles/Pagination.module.scss';
 
 const Pagination = ({ totalBreeds, breedsPerPage, currentPage, setCurrentPage }) => {
   const pageNumbers = [];

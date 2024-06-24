@@ -1,5 +1,5 @@
 // components/Search.js
-import styles from '../styles/Search.module.css';
+import styles from '../styles/Search.module.scss';
 
 const Search = ({ setSearch }) => {
   return (
